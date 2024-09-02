@@ -18,6 +18,7 @@ pipeline {
               // git branch: 'main',
               // credentialsId: "${env.GIT_CREDENTIALS_ID}",
               // url: 'https://github.com/aaqil24/test-py.git'
+			  checkout scm
             }
         }
         stage('Run Python Script') {
